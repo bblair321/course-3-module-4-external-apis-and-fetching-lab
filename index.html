@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Outdoor Gear Weather App</title>
 </head>
 <body>
-  <h1>Weather App</h1>
-  <input type="text" id="city-input" placeholder="Enter city name">
-  <button id="fetch-weather">Get Weather</button>
-  <div id="weather-display"></div>
-  <div id="error-message" class="hidden"></div>
-  <script src="../index.js"></script>
+  <h1>Welcome to Our Outdoor Gear Store!</h1>
+
+  <div>
+    <input type="text" id="city-input" placeholder="Enter city name" />
+    <button id="fetch-button">Fetch Weather</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <div id="weather-section">
+    <h2>Current Weather</h2>
+    <img id="weather-icon" src="" alt="Weather Icon" />
+    <p id="weather-description"></p>
+    <p id="temperature"></p>
+  </div>
+
+  <div id="recommendations-section">
+    <h2>Recommended Products for You</h2>
+    <ul id="product-recommendations"></ul>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
